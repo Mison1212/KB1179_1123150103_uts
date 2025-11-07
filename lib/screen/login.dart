@@ -26,7 +26,28 @@ class login extends StatelessWidget {
                     ),
 
                 ],
-              )
+              ),
+                const SizedBox(height: 30),
+
+                // membuat logo iKG
+                Center(
+                  child: Column(
+                    children: const [
+                      Icon(Icons.insert_chart_outlined_outlined,
+                      color: Colors.white, size: 80),
+                      SizedBox(height: 10),
+                      Text(
+                        'iKG',
+                        style: TextStyle(
+                          color:Colors.white,
+                          fontSize: 36,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                )
+
             ],
           ), 
           )
