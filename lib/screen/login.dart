@@ -132,6 +132,7 @@ class _LoginState extends State<login> {
                         ),
 
                         const SizedBox(height: 40),
+
                         // Continue Button
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
@@ -151,7 +152,6 @@ class _LoginState extends State<login> {
                             ),
                           ),
                         ),
-                        
                       ],
                     ),
                   ),

@@ -26,7 +26,7 @@ class SplashScreen3 extends StatelessWidget {
                   shape: BoxShape.circle,
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.green.withOpacity(0.2),
+                      color: Colors.green.shade100,
                       spreadRadius: 6,
                       blurRadius: 12,
                       offset: const Offset(0, 6),
@@ -81,7 +81,7 @@ class SplashScreen3 extends StatelessWidget {
                       boxShadow: isActive
                           ? [
                               BoxShadow(
-                                color: Colors.green.withOpacity(0.4),
+                                color: Colors.green.shade100,
                                 blurRadius: 6,
                                 offset: const Offset(0, 2),
                               )
