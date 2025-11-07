@@ -70,7 +70,28 @@ class login extends StatelessWidget {
                               hintText: "Enter full Name",
                             ),
                           ),
+
                             const SizedBox(height: 20),
+                            // phone Number Field 
+                            TextField(
+                              keyboardType: TextInputType.phone,
+                              decoration: InputDecoration(
+                                prefixIcon: Padding(
+                                  padding: const EdgeInsets.only(right: 8),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: const [
+                                      Text(
+                                        "IND +62",
+                                        style: TextStyle(color: Colors.black),
+                                      ),
+                                    ],
+                                  ),
+                                  ),
+                                  labelText: "Phone Number",
+                                  hintText: "Enter phone number",
+                              ),
+                            ),
 
                         ],
                       ),
