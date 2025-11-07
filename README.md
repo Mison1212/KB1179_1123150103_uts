@@ -1,6 +1,6 @@
 # uts_apmobile
 
-A new Flutter project.
+UTS Mobile App tgl 07 November 2025
 
 ## Screenshot
 
