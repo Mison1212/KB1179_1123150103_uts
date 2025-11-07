@@ -11,63 +11,93 @@ class SplashScreen3 extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const SizedBox(height: 50),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const SizedBox(height: 40),
 
-            Container(
-              width: 250,
-              height: 250,
-              decoration: const BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.blueGrey,
-                image: DecorationImage(
-                  image: AssetImage("assets/images/travel-9565325_640.png"),
+              // Gambar utama dengan bayangan lembut
+              Container(
+                width: 220,
+                height: 220,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.green.withOpacity(0.2),
+                      spreadRadius: 6,
+                      blurRadius: 12,
+                      offset: const Offset(0, 6),
+                    ),
+                  ],
+                  image: const DecorationImage(
+                    image: AssetImage("assets/images/travel-9565325_640.png"),
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
-            ),
-            const SizedBox(height: 30),
 
-            const Text(
-              "Foy",
-              style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.normal,
+              const SizedBox(height: 40),
+
+              // Judul utama
+              const Text(
+                "Foy",
+                style: TextStyle(
+                  fontSize: 34,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black87,
+                  letterSpacing: 1.2,
+                ),
               ),
-            ),
-            const SizedBox(height: 30),
 
-            const Text(
-              'Jangan Lupa untuk berbelanja ya!',
-              style: TextStyle(fontSize: 12, color: Colors.green),
-            ),
+              const SizedBox(height: 12),
 
-            const SizedBox(height: 30),
+              // Subteks
+              const Text(
+                'Jangan lupa untuk berbelanja ya!',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 15,
+                  color: Colors.grey,
+                ),
+              ),
 
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: List.generate(3, (index) {
-                bool isActive = (index + 1) == currentPage;
-                return Container(
-                  margin: const EdgeInsets.symmetric(horizontal: 5),
-                  width: 12,
-                  height: 12,
-                  decoration: BoxDecoration(
-                    color: isActive ? Colors.blue : Colors.blue.shade100,
-                    shape: BoxShape.circle,
-                  ),
-                );
-              }),
-            ),
+              const SizedBox(height: 40),
 
-            const SizedBox(height: 20),
+              // Indikator halaman
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: List.generate(3, (index) {
+                  bool isActive = (index + 1) == currentPage;
+                  return Container(
+                    margin: const EdgeInsets.symmetric(horizontal: 5),
+                    width: isActive ? 14 : 12,
+                    height: isActive ? 14 : 12,
+                    decoration: BoxDecoration(
+                      color: isActive ? Colors.green : Colors.green.shade100,
+                      shape: BoxShape.circle,
+                      boxShadow: isActive
+                          ? [
+                              BoxShadow(
+                                color: Colors.green.withOpacity(0.4),
+                                blurRadius: 6,
+                                offset: const Offset(0, 2),
+                              )
+                            ]
+                          : [],
+                    ),
+                  );
+                }),
+              ),
 
-            Container(
-              margin: const EdgeInsets.only(left: 40, right: 40),
-              child: SizedBox(
-                height: 40,
+              const SizedBox(height: 50),
+
+              // Tombol Continue
+              SizedBox(
                 width: double.infinity,
+                height: 48,
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.push(
@@ -77,18 +107,25 @@ class SplashScreen3 extends StatelessWidget {
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.green,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    elevation: 4,
+                    shadowColor: Colors.greenAccent,
                   ),
                   child: const Text(
                     "Continue",
                     style: TextStyle(
-                      fontSize: 14,
-                      color: Colors.deepPurple,
+                      fontSize: 16,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 0.5,
                     ),
                   ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
