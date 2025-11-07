@@ -2,15 +2,15 @@
 
 A new Flutter project.
 
-## Getting Started
+## Screenshot
 
-This project is a starting point for a Flutter application.
+<p align= "center">
+    <img src="assets/images/Screenshot Login.png" alt="Onboarding Screen" width="300">
+    <img src="assets/images/Screenshot Splash.png" alt="Onboarding Screen" width="300">
+</p>
 
-A few resources to get you started if this is your first Flutter project:
+## Identitas 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- ** Nama Lengkap : ** Mison Wenda
+- ** NIM : ** 1123150103
+- ** Matakuliah / Proyek : ** Mobile App 

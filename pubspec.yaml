@@ -60,7 +60,8 @@ flutter:
    - assets/images/anime-9063542_640.png
    - assets/images/climber-9491285_640.png
    - assets/images/travel-9565325_640.png
-
+   - assets/images/Screenshot Login.png
+   - assets/images/Screenshot Splash.png
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
