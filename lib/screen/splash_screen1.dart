@@ -73,6 +73,32 @@ class SplashScreen1 extends StatelessWidget {
                 ),
               ],
             ),
+
+            SizedBox(height: 20),
+
+            Container(
+            margin: const EdgeInsets.only(left: 40, right: 40),
+            child: SizedBox(
+              height: 40,
+              width: double.infinity,
+              child: ElevatedButton(onPressed: (){
+                // todo call next pages
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(builder: (context)=> SplashScreen2()),
+                // );
+
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.green,
+              ),
+               child: Text("continue",
+               style: TextStyle(
+                fontSize: 14,
+                color: Colors.deepPurple
+               ),)),
+            ),
+           )
           ],
         ),
       ),
