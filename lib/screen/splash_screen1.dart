@@ -23,7 +23,16 @@ class SplashScreen1 extends StatelessWidget {
                   image: AssetImage("assets/images/anime-9063542_640.png")
                 ),
               ),
-            )
+            ),
+              const SizedBox(height: 30),
+
+              const Text(
+                "Welcome",
+                style: TextStyle(
+                  fontSize: 10, fontWeight: FontWeight.normal
+                ),
+                ),
+
           ],
         ),
       ),
