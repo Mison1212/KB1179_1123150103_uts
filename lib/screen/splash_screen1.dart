@@ -32,7 +32,47 @@ class SplashScreen1 extends StatelessWidget {
                   fontSize: 10, fontWeight: FontWeight.normal
                 ),
                 ),
+              const SizedBox(height: 30),
 
+              Text(
+                'jangan Lupa untuk berbelanja ya !',
+                style: TextStyle(fontSize: 12, color: Colors.green),
+              ),
+
+              const SizedBox(height: 30),
+
+              Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  width: 12,
+                  height: 12,
+                  decoration: const BoxDecoration(
+                    color: Colors.blue,
+                    shape: BoxShape.circle,
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Container(
+                  width: 12,
+                  height: 12,
+                  decoration: BoxDecoration(
+                    color: Colors.blue.shade100,
+                    shape: BoxShape.circle,
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Container(
+                  width: 12,
+                  height: 12,
+                  decoration: BoxDecoration(
+                    color: Colors.blue.shade100,
+                    shape: BoxShape.circle,
+                  ),
+                  child: SizedBox(height: 40, width: double.infinity),
+                ),
+              ],
+            ),
           ],
         ),
       ),
