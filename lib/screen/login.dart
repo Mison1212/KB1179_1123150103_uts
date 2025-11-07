@@ -46,7 +46,37 @@ class login extends StatelessWidget {
                       ),
                     ],
                   ),
-                )
+                ),
+
+                const SizedBox(height: 40),
+
+                // input fields
+
+                Expanded(
+                  child: Container(
+                    width: double.infinity,
+                    decoration: const BoxDecoration(
+                      borderRadius: BorderRadius.vertical(top: Radius.circular(40)),
+                    ),
+
+                    child: SingleChildScrollView(
+                      padding: const EdgeInsets.all(24),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          const TextField(
+                            decoration: InputDecoration(
+                              labelText: "Full Name",
+                              hintText: "Enter full Name",
+                            ),
+                          ),
+                            const SizedBox(height: 20),
+
+                        ],
+                      ),
+                    ),
+                  )
+                  )
 
             ],
           ), 
